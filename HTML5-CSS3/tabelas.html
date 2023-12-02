@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            border: 5px solid rgba(0, 0, 255, 0.486) ;
+        }
+
+        td {
+            border: 1px solid rgba(0, 0, 255, 0.351);
+            padding: 8px;
+        }
+
+        tr.linhas {
+            background-color: aqua;
+        }
+
+        td.coluna {
+            background-color: skyblue;
+        }
+
+
+    </style>
+
+    <title> criando tabelas </title>
+
+</head>
+<body>
+    <h1> table row </h1>
+
+    <p>
+        Temos os tipos de tabelas mais simples: <br>
+        Table row = linha de tabela. <br>
+        Table header = cabeçalho da tabela. <br>
+        Table data = dados de tabela. <br>
+    </p>
+
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+
+        <tr class="linhas">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td class="coluna">C4</td>
+        </tr>
+    </table>
+
+    <p> No HTML5, o fechamento da tag &lt;td&gt; e &lt;tr&gt; é opcional.</p>
+    
+</body>
+</html>
