@@ -9,8 +9,14 @@
             border-collapse: collapse;
         }
 
+        caption {
+            padding: 10px;
+            font-weight: bold;
+        }
+
         th, td {
             border: 1px solid gray;
+            padding: 10px;
         }
     </style>
 
@@ -22,15 +28,15 @@
 
         <thread>
             <tr>
-                <th> Grupos </th>
-                <th> Nomes </th>
-                <th colspan="3"> Filmes </th>
+                <th scope="col"> Grupos </th>
+                <th scope="col"> Nomes </th>
+                <th colspan="3" scope="colgroup"> Filmes </th>
             </tr>
         </thread>
 
         <tbody>
             <tr>
-                <th rowspan="3"> Mulheres </th>
+                <th rowspan="3" scope="rowgroup"> Mulheres </th>
                 <td> Ana maria santos </td>
                 <td> Alien </td>
                 <td> Rambo </td>
@@ -52,7 +58,7 @@
             </tr>
 
             <tr>
-                <th rowspan="3"> Homens </th>
+                <th rowspan="3" scope="rowgroup"> Homens </th>
                 <td> Bruno Mendonça </td>
                 <td>Intocáveis</td>
                 <td>Amnesia</td>
@@ -73,6 +79,11 @@
                 <td>Toy Story</td>
             </tr>
         </tbody>
+
+        <tfoot>
+            <th colspan="4" scope="row"> Total </th>
+            <td></td>
+        </tfoot>
     </table>
 </body>
 </html>
