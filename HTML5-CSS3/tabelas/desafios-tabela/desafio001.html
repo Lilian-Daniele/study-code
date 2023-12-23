@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         table {
-            border-collapse: collapse;
+           width: 350px;
+           border-collapse: collapse;
         }
 
-        tr, td {
+        td {
             border: 1px solid gray;
+            vertical-align: middle;
             padding: 15px;
-            width: 100px;
+            text-align: center;
         }
 
         .cor1 {
-            background-color: rgba(106, 106, 105, 0.354);
+            background-color: rgba(220, 208, 193, 0.372);
         }
 
         .cor2 {
-            background-color: rgba(176, 176, 176, 0.185);
+            background-color: rgba(76, 76, 75, 0.266);
         }
     </style>
 
-    <title>Document</title>
+    <title> desafio </title>
 </head>
 <body>
     <table class="cor1">
         <tr>
-           <td>1</td>
-           <td>2</td>
-           <td rowspan="2">3</td>
-           <td>4</td>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
         </tr>
 
         <tr>
@@ -41,8 +43,8 @@
             <td>7</td>
         </tr>
 
-        <tr>
-            <td colspan="3">8</td>
+        <tr> 
+            <td colspan="3"> 8 </td>
             <td>9</td>
         </tr>
 
@@ -61,35 +63,34 @@
 
     <br>
 
-    <table class="cor2">
+    <table class="cor2"> 
         <tr>
-            <td colspan="4">a</td>
-            <td rowspan="4">b</td>
+            <td colspan="4"> A </td>
+            <td rowspan="4"> B </td>
         </tr>
 
         <tr>
-            <td rowspan="4">c</td>
-            <td>d</td>
-            <td>e</td>
-            <td>f</td>
+            <td rowspan="4"> C </td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
         </tr>
 
         <tr>
-            <td>g</td>
-            <td>h</td>
-            <td>i</td>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
         </tr>
 
         <tr>
-            <td>j</td>
-            <td>l</td>
-            <td>m</td>
+            <td colspan="4"> N </td>
         </tr>
-
-        <tr>
-            <td colspan="4">n </td>
-        </tr>
-
     </table>
 </body>
 </html>
