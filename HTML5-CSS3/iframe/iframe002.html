@@ -10,25 +10,39 @@
         }
 
         body {
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-image: url(../imagens\ de\ fundo/imagens/wallpaper006.jpg);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 10px;
         }
 
-        iframe{
-            height: 390px;
-            width: 350px;
+        iframe {
+            background-color: aliceblue;
+            height: 400px;
+            width: 90vw;
+            border: 2px solid black;
         }
     </style>
-
-    <title> Site de teste </title>
+    <title> iframes </title>
 </head>
 <body>
-    <h1> Teste de iframe </h1>
+    <h1> Uso de iframes </h1>
 
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatum, consequatur odit optio esse eaque quas! Sed libero adipisci odit mollitia laboriosam corrupti sint minima ex, explicabo voluptas at accusamus! </p>
+    <p> Interagir com outras páginas em iframes. </p>
 
-    <iframe src="page001.html" frameborder="0"></iframe>
+    <ul>
+        <li> <a href="../iframe/páginas extras/page001.html" target="frame"> Primeira página de exemplo. </a></li>
+        <li> <a href="../iframe/páginas extras/page002.html" target="frame"> Segunda página de exemplo. </a></li>
+        <li> <a href="../iframe/páginas extras/page003.html" target="frame"> Terceira página de exemplo.</a></li>
+    </ul>
 
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse a repellat, in, eum libero rem sunt, perspiciatis ipsam quasi similique minima consectetur quisquam labore deserunt molestias. Laborum, inventore. Facere, officiis. </p>
-    
+    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam soluta expedita, repudiandae nulla incidunt eveniet totam, magnam minima excepturi quia neque nostrum earum provident a omnis dolorum, voluptatem atque autem? </p>
+
+    <iframe src="../iframe/páginas extras/page001.html" name="frame" frameborder="1">
+        <p> Infelizmente seu site não é compativel com esse navegador. </p>
+    </iframe>
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ratione nisi animi consectetur ducimus, sequi perferendis quaerat odio quidem saepe eum fugit maiores aut rerum. Nam ea voluptatibus illo eveniet. </p>
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eos vel rem nemo voluptas neque non. Dignissimos suscipit, voluptatibus corrupti enim, consequuntur ut ullam perspiciatis, molestias eos ea necessitatibus earum? </p>
 </body>
 </html>

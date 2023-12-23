@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
+
+    <title> expansão de linha e coluna </title>
+</head>
+<body>
+    <table>
+        <caption> mesclagem de celulas </caption>
+
+        <thread>
+            <tr>
+                <th scope="col"> Grupos </th>
+                <th scope="col"> Nomes </th>
+                <th colspan="3" scope="colgroup"> Filmes </th>
+            </tr>
+        </thread>
+
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup"> Mulheres </th>
+                <td> Ana maria santos </td>
+                <td> Alien </td>
+                <td> Rambo </td>
+                <td> Vingadores </td>
+            </tr>
+
+            <tr>
+                <td>Beatriz souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+
+            <tr>
+                <td> Claudia Melo </td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big hero</td>
+            </tr>
+
+            <tr>
+                <th rowspan="3" scope="rowgroup"> Homens </th>
+                <td> Bruno Mendonça </td>
+                <td>Intocáveis</td>
+                <td>Amnesia</td>
+                <td>Gladiador</td>
+            </tr>
+
+            <tr>
+                <td>Daniel lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star wars 5</td>
+                <td>Taxi driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th colspan="4" scope="row"> Total </th>
+            <td> 0.0 </td>
+        </tfoot>
+    </table>
+</body>
+</html>
