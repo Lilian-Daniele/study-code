@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        tr, td {
+            border: 1px solid gray;
+            padding: 15px;
+            width: 100px;
+        }
+
+        .cor1 {
+            background-color: rgba(106, 106, 105, 0.354);
+        }
+
+        .cor2 {
+            background-color: rgba(176, 176, 176, 0.185);
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <table class="cor1">
+        <tr>
+           <td>1</td>
+           <td>2</td>
+           <td rowspan="2">3</td>
+           <td>4</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table class="cor2">
+        <tr>
+            <td colspan="4">a</td>
+            <td rowspan="4">b</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+
+        <tr>
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+        </tr>
+
+        <tr>
+            <td>j</td>
+            <td>l</td>
+            <td>m</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">n </td>
+        </tr>
+
+    </table>
+</body>
+</html>
